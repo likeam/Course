@@ -1,9 +1,8 @@
 // helloRoutes.js
 const express = require('express');
 const router = express.Router();
+const newController = require('../Controller/Controller')
 
-router.get('/', (req, res) => {
-  res.send('Hello, world From Router');
-});
+router.get('/', newController.controller);
 
 module.exports = router;
